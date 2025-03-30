@@ -1,6 +1,6 @@
 # 🧠 model_train_infer
 
-This repository contains two core Databricks notebooks designed for a simple machine learning pipeline: model training and inference. These notebooks are invoked as part of a fully automated CI/CD pipeline driven by [cli_gh](https://github.com/Ashoke238/cli_gh), and integrated with MLflow and Unity Catalog for model management.
+This repository contains two core Databricks notebooks designed for a simple machine learning pipeline: model training and inference. These notebooks are invoked as part of a fully automated CI/CD pipeline driven by [cli_gh](https://github.com/ASHOKEKUMAR-S/cli_gh), and integrated with MLflow and Unity Catalog for model management.
 
 ---
 
@@ -75,7 +75,7 @@ This notebook performs inference using the latest registered model.
 
 ## 🤖 Workflow Automation
 
-The CLI automation in [cli_gh](https://github.com/Ashoke238/cli_gh) performs the following steps:
+The CLI automation in [cli_gh](https://github.com/ASHOKEKUMAR-S/cli_gh) performs the following steps:
 
 1. Accepts inputs like repo name, training & inference accuracy thresholds.
 2. Creates a new GitHub repo from a template.
@@ -115,5 +115,5 @@ PRs are welcome! If you’d like to suggest improvements or enhancements to the 
 
 ## 📄 License
 
-MIT © Ashoke238
+MIT © ASHOKEKUMAR-S
 
