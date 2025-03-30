@@ -27,19 +27,18 @@ model_train_infer/
 This notebook performs end-to-end training of a classification model using a real dataset. Below are the steps:
 
 ### ✅ Data Ingestion
-- Loads the Breast Cancer dataset using `sklearn.datasets.load_breast_cancer()`.
+- Perfomrs a Mock data ingestion.
 - Converts it to a Pandas DataFrame and assigns feature and label columns.
 
 ### 🧪 Feature Engineering
-- Scales all features using `StandardScaler`.
 - Splits the dataset into train and test using an 80-20 split.
 
 ### 🧠 Model Training
-- Uses `LogisticRegression` from `sklearn.linear_model` with default parameters.
-- Trains on scaled features.
+- Uses `LogisticRegression`with default parameters.
+- Trains on features.
 
 ### 📊 MLflow Integration
-- Logs hyperparameters (e.g., model type, scaler used, split ratio).
+- Logs hyperparameters.
 - Logs performance metric `accuracy`.
 - Registers the model to **MLflow Model Registry**.
 - Naming convention for experiment and model includes GitHub repo name, environment (dev), and user email.
@@ -59,7 +58,7 @@ This notebook performs inference using the latest registered model.
 - Retrieves the latest model version from MLflow for the given repo and `dev` environment.
 
 ### 📥 Load Test Data
-- Reads test dataset from the Delta table saved during training phase.
+- Loads a mock input data.
 
 ### 🔮 Perform Inference
 - Loads the model and runs predictions on the test dataset.
@@ -69,8 +68,7 @@ This notebook performs inference using the latest registered model.
 - Table name format: `uc_catalog.uc_schema.{repo_name}_predictions_dev`
 
 ### 📌 MLflow Metadata Logging
-- Logs metadata about the inference run (model version, run ID, timestamp).
-
+- Logs metadata about the inference run.
 ---
 
 ## 🤖 Workflow Automation
